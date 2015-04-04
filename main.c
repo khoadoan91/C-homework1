@@ -40,7 +40,7 @@ void convertToBin(double num) {
     }
     curPower /= 2;
     
-    while (num != 0 && i < 20) {
+    while ((curPower > 0.5) || (num != 0 && i < 20)) {
         if (curPower == 0.5) {
             printf(".");
         }
